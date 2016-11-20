@@ -11,8 +11,9 @@ Add-LabIsoImageDefinition -Name Exchange2016 -Path $labSources\ISOs\ExchangeServ
 #defining default parameter values, as these ones are the same for all the machines
 $PSDefaultParameterValues = @{
     'Add-LabMachineDefinition:DomainName' = 'lab.local'
-    'Add-LabMachineDefinition:MinMemory' = 512Mb
+    'Add-LabMachineDefinition:Memory' = 512Mb
     'Add-LabMachineDefinition:MaxMemory' = 1024Mb
+    'Add-LabMachineDefinition:MinMemory' = 512Mb
     'Add-LabMachineDefinition:OperatingSystem' = 'Windows Server 2016 SERVERSTANDARD'
     'Add-LabMachineDefinition:Network' = $labName
     'Add-LabMachineDefinition:ToolsPath'= "$labSources\Tools"
